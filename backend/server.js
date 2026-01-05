@@ -15,14 +15,16 @@ require("./config/db")()
 
 const categoryRoute= require('./routes/category.route')
 const subCategoryRoute= require('./routes/subcategory.route')
-const product= require('./routes/product.route')
+const productRoute= require('./routes/product.route')
+const userRoute= require('./routes/user.route')
 
 
 // api routing  
 
 app.use('/api/category',categoryRoute)
 app.use('/api/subcategory',subCategoryRoute)
-app.use('/api/product',product)
+app.use('/api/product',productRoute)
+app.use('/api/user',userRoute)
 
 
 
